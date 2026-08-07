@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f8fa"/>
+      <stop offset=".45" stop-color="#cfd4da"/>
+      <stop offset=".75" stop-color="#8f959c"/>
+      <stop offset="1" stop-color="#eceff2"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff5a4a"/>
+      <stop offset="1" stop-color="#c81a12"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0e1116"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#2a3038" stroke-width="1.5"/>
+  <!-- Platinum P -->
+  <path fill="url(#steel)" d="M20 15h13.5c6.6 0 11 3.7 11 9.8s-4.4 9.9-11 9.9H27.5V49H20V15zm7.5 6.3v7.1h5c2.9 0 4.6-1.3 4.6-3.6s-1.7-3.5-4.6-3.5h-5z"/>
+  <!-- red heat drop -->
+  <path fill="url(#drop)" d="M45 30c0 3-2.4 5.4-5.4 5.4S34.2 33 34.2 30c0-3.3 5.4-9 5.4-9s5.4 5.7 5.4 9z"/>
+</svg>
