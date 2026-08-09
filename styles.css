@@ -333,21 +333,21 @@ section{padding:clamp(64px,10vw,120px) var(--pad);position:relative}
 .prod-frame{position:relative;border-radius:var(--radius);overflow:hidden;min-width:0;
   background:linear-gradient(160deg,#eef1f4,#c4cad1);
   border:1px solid var(--line-2);box-shadow:0 30px 70px -40px #000}
-.prod-frame img{width:100%;aspect-ratio:16/11;object-fit:contain;padding:6%;position:relative;z-index:1}
+.prod-frame img{width:100%;aspect-ratio:16/11;object-fit:cover;padding:0;position:relative;z-index:1}
 .prod-frame--heat{background:linear-gradient(160deg,#241614,#120c0b)}
-.prod-frame--heat img{object-fit:contain}
+.prod-frame--heat img{object-fit:cover}
 .prod-frame__heat{position:absolute;inset:0;z-index:0;
   background:radial-gradient(80% 60% at 50% 100%,rgba(255,59,47,.35),transparent 70%);
   animation:breathe 4s ease-in-out infinite}
 @keyframes breathe{50%{opacity:.5}}
 .prod-frame--water{background:linear-gradient(160deg,#0f1c26,#0a1218)}
-.prod-frame--water img{object-fit:contain;background:#fff;padding:0}
+.prod-frame--water img{object-fit:cover;background:transparent;padding:0}
 .prod-frame__flow{position:absolute;inset:0;z-index:2;pointer-events:none;
   background:linear-gradient(115deg,transparent 35%,rgba(92,185,239,.25) 50%,transparent 65%);
   background-size:250% 100%;animation:flowsheen 5s linear infinite;mix-blend-mode:screen}
 @keyframes flowsheen{to{background-position:-200% 0}}
 .prod-frame--power{background:linear-gradient(160deg,#20180a,#12100b)}
-.prod-frame--power img{object-fit:contain}
+.prod-frame--power img{object-fit:cover}
 
 .feature__media{position:relative}
 .chip-badge{
@@ -465,7 +465,7 @@ section{padding:clamp(64px,10vw,120px) var(--pad);position:relative}
 .partners{background:linear-gradient(180deg,var(--bg),var(--bg-2))}
 .partners__row{max-width:660px;margin:0 auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .partner{display:flex;align-items:center;justify-content:center;padding:32px 24px;
-  border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.9);
+  border-radius:14px;border:1px solid var(--line);background:#fff;
   min-height:150px;transition:transform .4s,box-shadow .4s}
 .partner:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px #000}
 .partner img{max-height:96px;max-width:100%;width:auto;object-fit:contain}
