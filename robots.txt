@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ali-hub-01.github.io/platinumtech/sitemap.xml
+Sitemap: https://platinumtech.kz/sitemap.xml
