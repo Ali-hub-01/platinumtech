@@ -215,7 +215,27 @@
 
       var ok = document.getElementById('leadOk');
       if (ok) ok.hidden = false;
+
+      /* Google Ads: конверсия "Отправка формы для потенциальных клиентов" */
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18383774699/9TrCCMnu7d8cEOvHiL5E',
+          'value': 1.0, 'currency': 'USD'
+        });
+      }
+
       window.location.href = href;
     });
   }
+
+  /* ---------- Google Ads: телефон (Интерактивные номера) + email (Контакт) ---------- */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+    if (!a || typeof gtag !== 'function') return;
+    var isTel = a.getAttribute('href').indexOf('tel:') === 0;
+    gtag('event', 'conversion', {
+      'send_to': isTel ? 'AW-18383774699/wviSCMzj_98cEOvHiL5E' : 'AW-18383774699/VLdfCPLu_98cEOvHiL5E',
+      'value': 1.0, 'currency': 'USD'
+    });
+  });
 })();

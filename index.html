@@ -6,6 +6,24 @@
 <link rel="canonical" href="https://platinumtech.kz/">
 <meta name="robots" content="index, follow">
 
+<!-- Google тег (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18383774699"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18383774699');
+  /* Конверсия "Интерактивные номера телефонов" - по клику на телефон */
+  function gtag_report_conversion(url) {
+    var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18383774699/wviSCMzj_98cEOvHiL5E',
+      'value': 1.0, 'currency': 'USD', 'event_callback': callback
+    });
+    return false;
+  }
+</script>
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
@@ -28,7 +46,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 
 <!-- Scroll progress rail (поток / контур) -->
 <div class="flow-rail" aria-hidden="true"><span class="flow-rail__fill"></span></div>
@@ -473,4 +491,4 @@
 
 <a class="fab" href="#zayavka" aria-label="Получить ТКП" id="fab">Получить ТКП</a>
 
-<script src="script.js?v=2" defer></script>
+<script src="script.js?v=3" defer></script>
